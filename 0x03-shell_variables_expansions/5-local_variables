@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "$(declare -p | grep -E '^declare -[^a]') $(printenv) $(declare -F)"
+
