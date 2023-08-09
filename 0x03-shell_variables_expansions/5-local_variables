@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(declare -p | grep -E '^declare -[^a]') $(printenv) $(declare -F)"
+compgen -A variable -A function
