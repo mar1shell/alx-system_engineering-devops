@@ -1,2 +1,2 @@
 #!\bin\bash
-find . -mindepth 2 -type d | wc -l
+shopt -s dotglob; echo $(($(find . -type d | wc -l)-2)); shopt -u dotglob
